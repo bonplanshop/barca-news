@@ -3,44 +3,153 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BARÇA NEWS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BARÇA NEWS | Toute l'actualité du Barça</title>
 <script data-goatcounter="https://barcanews.goatcounter.com/count"
 async src="//gc.zgo.at/count.js"></script>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#eef1f8;color:#172044}
-header{background:linear-gradient(120deg,#004d98,#a50044);color:white;text-align:center;padding:30px 15px}
-.logo{width:65px;vertical-align:middle}
-h1{display:inline-block;vertical-align:middle;margin:0 0 0 12px;font-size:32px}
-header p{margin-bottom:0}
-main{max-width:950px;margin:auto;padding:20px}
-h2{color:#a50044}
-.team{width:100%;border-radius:15px;display:block;margin:20px 0}
-.card{background:white;padding:20px;border-radius:12px;margin:15px 0;box-shadow:0 3px 12px #0001}
-a{color:#004d98;font-weight:bold}
-footer{text-align:center;background:#172044;color:white;padding:22px;margin-top:35px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f2f4f8;color:#172033}
+header{background:linear-gradient(110deg,#071b59,#a50044);color:white;padding:22px 7%;display:flex;align-items:center;gap:15px}
+header img{width:58px}
+header h1{font-size:27px}
+nav{background:#071b59;padding:15px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 14px;font-weight:bold}
+.hero{padding:75px 8%;color:white;background:linear-gradient(90deg,#061747dd,#a50044aa),url('https://www.fcbarcelona.com/photo-resources/2026/01/19/dcf2f94d-3ec0-4c05-8019-42a9fe8a8424/mini_PLANTILLA_COPA_01-.jpg?height=750&width=1200') center/cover}
+.hero h2{font-size:42px;margin-bottom:15px}
+.hero p{font-size:18px}
+main{max-width:1100px;margin:35px auto;padding:0 18px}
+h2.section{border-left:6px solid #a50044;padding-left:12px;margin:35px 0 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:white;border-radius:13px;padding:22px;box-shadow:0 3px 14px #00000012}
+.card h3{color:#a50044;margin-bottom:12px}
+.card p{line-height:1.6;margin-bottom:15px}
+.card a{color:#073b91;font-weight:bold;text-decoration:none}
+.card a:hover{text-decoration:underline}
+.news{background:white;padding:18px;border-radius:12px;margin-bottom:12px}
+.news a{color:#10285e;font-weight:bold;text-decoration:none}
+footer{background:#071b59;color:white;text-align:center;padding:25px;margin-top:50px}
+@media(max-width:600px){
+header h1{font-size:21px}
+nav a{display:inline-block;margin:7px;font-size:14px}
+.hero{padding:55px 7%}
+.hero h2{font-size:30px}
+}
 </style>
 </head>
 <body>
 <header>
-<img class="logo" src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Logo Barça">
+<img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Logo FC Barcelone">
 <h1>BARÇA NEWS</h1>
-<p>Toute l'actualité du FC Barcelone</p>
 </header>
+
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#actualites">Actualités</a>
+<a href="#equipe">Équipe</a>
+<a href="#matchs">Matchs</a>
+</nav>
+
+<section class="hero" id="accueil">
+<h2>100% BARÇA 🔵🔴</h2>
+<p>Toute l'actualité du FC Barcelone au même endroit.</p>
+</section>
+
 <main>
-<h2>🔵🔴 L'équipe du Barça</h2>
-<img class="team" src="https://www.fcbarcelona.com/photo-resources/2026/01/19/dcf2f94d-3ec0-4c05-8019-42a9fe8a8424/mini_PLANTILLA_COPA_01-.jpg?height=750&width=1200" alt="Équipe du FC Barcelone">
-<h2>📰 Actualités</h2>
+<h2 class="section" id="actualites">📰 Dernières actualités</h2>
+<div id="news">
+<div class="news">Chargement des actualités...</div>
+</div>
+
+<h2 class="section" id="equipe">⚽ Le FC Barcelone</h2>
+<div class="cards">
 <div class="card">
-<h3>Les dernières nouvelles du Barça</h3>
-<p>Retrouve les actualités officielles du FC Barcelone.</p>
-<a href="https://www.fcbarcelona.com/en/football/first-team/news" target="_blank" rel="noopener">Lire les actualités →</a>
+<h3>L'équipe</h3>
+<p>Découvre les joueurs, l'effectif et les informations du club.</p>
+<a href="https://www.fcbarcelona.com/en/football/first-team/players" target="_blank">Voir l'effectif →</a>
+</div>
+<div class="card">
+<h3>Le club</h3>
+<p>Retrouve toutes les informations officielles du Barça.</p>
+<a href="https://www.fcbarcelona.com/" target="_blank">Site officiel →</a>
+</div>
+</div>
+
+<h2 class="section" id="matchs">📅 Prochains matchs</h2>
+
+<div class="cards">
+<div class="card">
+<h3>🔵🔴 Barça - Villarreal</h3>
+<p>📅 22 novembre 2026</p>
+<p>🕑 14h00</p>
+</div>
+
+<div class="card">
+<h3>⚽ Sabah - Barça</h3>
+<p>📅 25 novembre 2026</p>
+<p>🕡 18h45</p>
+</div>
+
+<div class="card">
+<h3>🔵🔴 Deportivo - Barça</h3>
+<p>📅 29 novembre 2026</p>
+<p>🕓 16h15</p>
+</div>
+
+<div class="card">
+<h3>🔵🔴 Barça - Atlético</h3>
+<p>📅 2 décembre 2026</p>
+<p>🕤 21h30</p>
+</div>
+
+<div class="card">
+<h3>🔵🔴 Barça - Celta Vigo</h3>
+<p>📅 6 décembre 2026</p>
+<p>🕗 20h00</p>
+</div>
+
+<div class="card">
+<h3>🔵🔴 Barça - Manchester City</h3>
+<p>📅 8 décembre 2026</p>
+<p>🕘 21h00</p>
+</div>
+</div>
+<div class="card">
+<h3>Calendrier du Barça</h3>
+<p>Consulte les dates, les horaires et les résultats des prochaines rencontres.</p>
+<a href="https://www.fcbarcelona.com/en/football/first-team/schedule" target="_blank">Voir le calendrier officiel →</a>
 </div>
 </main>
+
 <footer>
-<p>BARÇA NEWS © 2026</p>
-<p>Créé par un supporter du Barça 🔵🔴</p>
+<p><strong>BARÇA NEWS</strong> — La passion du Barça 🔵🔴</p>
+<p>Site de fans indépendant, non affilié au FC Barcelone.</p>
 </footer>
+
+<script>
+const rss = "https://news.google.com/rss/search?q=FC+Barcelona&hl=fr&gl=FR&ceid=FR:fr";
+fetch("https://api.rss2json.com/v1/api.json?rss_url="+encodeURIComponent(rss))
+.then(response=>response.json())
+.then(data=>{
+const zone=document.getElementById("news");
+if(!data.items || data.items.length===0) throw new Error("Pas d'articles");
+zone.innerHTML="";
+data.items.slice(0,6).forEach(item=>{
+const article=document.createElement("div");
+article.className="news";
+const link=document.createElement("a");
+link.href=item.link;
+link.target="_blank";
+link.rel="noopener";
+link.textContent=item.title;
+article.appendChild(link);
+zone.appendChild(article);
+});
+})
+.catch(()=>{
+document.getElementById("news").innerHTML=
+'<div class="news">Les actualités ne sont pas disponibles pour le moment. <a href="https://news.google.com/search?q=FC%20Barcelona&hl=fr&gl=FR" target="_blank">Voir les dernières actualités →</a></div>';
+});
+</script>
 </body>
 </html>
