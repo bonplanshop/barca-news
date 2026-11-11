@@ -1,173 +1,46 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BARÇA NEWS</title>
 <script data-goatcounter="https://barcanews.goatcounter.com/count"
 async src="//gc.zgo.at/count.js"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BARÇA NEWS</title>
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #071b45;
-  color: white;
-}
-header {
-  background: #a50044;
-  padding: 25px;
-  text-align: center;
-}
-h1 { margin: 0; }
-nav {
-  background: #004d98;
-  padding: 15px;
-  text-align: center;
-}
-nav a {
-  color: white;
-  margin: 12px;
-  text-decoration: none;
-  font-weight: bold;
-}
-main {
-  max-width: 900px;
-  margin: 25px auto;
-  padding: 15px;
-}
-.article {
-  background: #102b58;
-  padding: 18px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-}
-.article a { color: #ffcc00; }
-footer {
-  text-align: center;
-  padding: 20px;
-}
-</style><style>
-body {
-  background: #f2f4f8;
-  color: #172554;
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-header {
-  background: linear-gradient(90deg, #004d98, #a50044);
-  color: white;
-  padding: 25px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 32px;
-}
-
-img {
-  max-width: 100%;
-}
-
-article {
-  background: white;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px #0002;
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#eef1f8;color:#172044}
+header{background:linear-gradient(120deg,#004d98,#a50044);color:white;text-align:center;padding:30px 15px}
+.logo{width:65px;vertical-align:middle}
+h1{display:inline-block;vertical-align:middle;margin:0 0 0 12px;font-size:32px}
+header p{margin-bottom:0}
+main{max-width:950px;margin:auto;padding:20px}
+h2{color:#a50044}
+.team{width:100%;border-radius:15px;display:block;margin:20px 0}
+.card{background:white;padding:20px;border-radius:12px;margin:15px 0;box-shadow:0 3px 12px #0001}
+a{color:#004d98;font-weight:bold}
+footer{text-align:center;background:#172044;color:white;padding:22px;margin-top:35px}
 </style>
 </head>
 <body>
-
 <header>
-<h1 style="display:flex; align-items:center; justify-content:center; gap:10px; width:100%; margin:0 auto; text-align:center;">
-  <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
-style="width:40px; height:40px; object-fit:contain;">
-  BARÇA NEWS
-</h1>
-    <p>Toute l'actualité du FC Barcelone</p>
+<img class="logo" src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Logo Barça">
+<h1>BARÇA NEWS</h1>
+<p>Toute l'actualité du FC Barcelone</p>
 </header>
-<div style="text-align:center; padding:20px;">
-  <img 
-    src="https://placehold.co/1200x450/004D98/FFFFFF?text=FC+BARCELONA"
-    style="width:100%; max-width:1000px; border-radius:15px;"
-    alt="FC Barcelone">
-</div> 
- <div style="text-align:center; margin-bottom:10px;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/FC_Barcelona_%28crest%29.svg/120px-FC_Barcelona_%28crest%29.svg.png"
-       style="width:65px; height:65px; object-fit:contain;"
-       alt="Logo FC Barcelone">
-</div><div style="text-align:center; margin-top:15px;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/FC_Barcelona_%28crest%29.svg/120px-FC_Barcelona_%28crest%29.svg.png"
-       style="width:65px; height:65px; object-fit:contain;"
-       alt="Logo FC Barcelone">
-</div>
-  <img style="text-align:center; padding:20px;"></div>
-    src="https://www.fcbarcelona.com/photo-resources/2026/01/19/dcf2f94d-3ec0-4c05-8019-42a9fe8a8424/mini_PLANTILLA_COPA_01-.jpg?height=750&width=1200"
-    style="width:100%; max-width:1000px; border-radius:15px; display:block; margin:0 auto;"
-    alt="Équipe du FC Barcelone 2025-2026">
-</div>
-<nav>
-<a href="#">Accueil</a>
-<a href="#actualites">Actualités</a>
-<a href="https://www.fcbarcelona.fr/fr/actualites/">Site officiel</a>
-</nav>
-
 <main>
-<h2 id="actualites">📰 Dernières actualités</h2>
-<p>Les dernières nouvelles du Barça :</p>
-
-<div id="news">Chargement des actualités...</div>
+<h2>🔵🔴 L'équipe du Barça</h2>
+<img class="team" src="https://www.fcbarcelona.com/photo-resources/2026/01/19/dcf2f94d-3ec0-4c05-8019-42a9fe8a8424/mini_PLANTILLA_COPA_01-.jpg?height=750&width=1200" alt="Équipe du FC Barcelone">
+<h2>📰 Actualités</h2>
+<div class="card">
+<h3>Les dernières nouvelles du Barça</h3>
+<p>Retrouve les actualités officielles du FC Barcelone.</p>
+<a href="https://www.fcbarcelona.com/en/football/first-team/news" target="_blank" rel="noopener">Lire les actualités →</a>
+</div>
 </main>
-
 <footer>
-BARÇA NEWS © 2026
+<p>BARÇA NEWS © 2026</p>
+<p>Créé par un supporter du Barça 🔵🔴</p>
 </footer>
-
-<script>
-const feed = "https://www.fcbarcelonanoticias.com/rss.html";
-
-async function chargerActualites() {
-  const zone = document.getElementById("news");
-
-  try {
-    const url = "https://api.rss2json.com/v1/api.json?rss_url=" +
-                encodeURIComponent("https://www.fcbarcelonanoticias.com/feed/");
-
-    const reponse = await fetch(url);
-    const data = await reponse.json();
-
-    if (!data.items || data.items.length === 0) {
-      throw new Error("Aucune actualité");
-    }
-
-    zone.innerHTML = "";
-
-    data.items.slice(0, 10).forEach(article => {
-      const bloc = document.createElement("div");
-      bloc.className = "article";
-
-      const titre = document.createElement("h3");
-      titre.textContent = article.title;
-
-      const lien = document.createElement("a");
-      lien.href = article.link;
-      lien.target = "_blank";
-      lien.rel = "noopener";
-      lien.textContent = "Lire l'article";
-
-      bloc.append(titre, lien);
-      zone.appendChild(bloc);
-    });
-  } catch (erreur) {
-    zone.textContent =
-      "Impossible de charger les actualités pour le moment. Consulte le site officiel du Barça.";
-  }
-}
-
-chargerActualites();
-</script>
-
 </body>
 </html>
